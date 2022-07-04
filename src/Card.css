@@ -1,0 +1,124 @@
+@import url("./index.css");
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width:350px;
+    background:white;
+    margin:0 auto;
+    border-radius:20px;
+}
+
+.card__header{
+    width:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.card__image{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.card__content{
+    padding:0 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--FontFamily);
+
+}
+
+.card__title{
+    font-size:25px;
+    font-weight: var(--FontWeightLarge);
+    width:100%;
+    text-align: center;
+    margin:20px auto 20px auto;
+    color:var(--DarkBlue);
+}
+
+.card__text{
+    font-size:var(--FontSize);
+    font-weight: var(--FontWeightSmall);
+    text-align: center;
+    color:var(--DesaturatedBlue);
+    line-height: 30px;
+    margin:0 auto 20px auto;
+}
+
+.card__plan-container{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background:var(--VeryPaleBlue);
+    width:100%;
+    padding:5px;
+    border-radius: 20px;
+    height:80px;
+}
+
+.card__plan-icon{
+    margin:0 auto;
+}
+.card__plan-description{
+    display:flex;
+    position: relative;
+    right:23px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:5px auto;
+}
+
+.card__plan-title{
+    margin:5px 0;
+    font-weight: var(--FontWeightLarge);
+}
+
+.card__plan-text{
+    margin:0;
+    color:var(--DesaturatedBlue);
+    font-weight: var(--FontWeightSmall);
+
+}
+
+.card__plan-change{
+    margin:0 auto ;
+    font-weight: var(--FontWeightMedium);
+}
+.card__plan-change--hover:hover{
+    color:var(--BrightBluePale);
+    text-decoration: none;
+}
+.card__btn-proceed{
+    height:50px;
+    width:300px;
+    border-radius: 10px;
+    border:none;
+    margin:20px auto;
+    background-color: var(--BrightBlue);
+    font-family: var(--FontFamily);
+    color:white;
+    font-weight: var(--FontWeightLarge);
+    font-size:15px;
+    box-shadow: 0 5px 40px 1px var(--DesaturatedBlue);
+}
+
+.card__btn-proceed--hover:hover{
+    background: var(--BrightBluePale);
+}
+
+.card__cancel-order{
+    color:var(--DesaturatedBlue);
+    font-weight: var(--FontWeightLarge);
+    font-size:15px;
+}
+
+.card__cancel-order--hover:hover{
+    color:var(--DarkBlue);
+}
