@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/alencardotpy/order-summary-component)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://order-summary-component-beta-six.vercel.app/)
 
 ## My process
 
