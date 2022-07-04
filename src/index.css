@@ -1,4 +1,73 @@
 :root{
-  margin: 0;
-  padding:0;
-}
+  /*
+  The designs were created to the following widths:
+  */
+  --MobileWidth: 375px;
+  --DesktopWidth: 1440px;
+  /*
+  ## Colors
+  
+  ### Primary
+  */
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --BrightBluePale: hsla(245, 83%, 68%);
+  /*
+  ### Neutral
+  */
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  /*
+  ## Typography
+  
+  ### Body Copy
+  */
+  --FontSize: 16px;
+  /*
+  ### Font
+  */
+  --FontFamily:'Red Hat Display', sans-serif;
+  --FontWeightSmall: 500;
+  --FontWeightMedium:700; 
+  --FontWeightLarge: 900;
+      
+  }
+  body{
+      background-image: url("./pattern-background-mobile.svg");
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: 0;
+      background-color: var(--PaleBlue);
+      font-family: var(--FontFamily);
+      height:100vh;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color:var(--DarkBlue);
+  }
+  
+  @media screen and (min-width:768px) {
+  body{
+      margin:0;
+      background-image: url("./pattern-background-desktop.svg");
+      background-size:100vw; 
+      background-repeat: no-repeat;
+      background-position: 0 -1vh;
+      background-color: var(--PaleBlue);
+      font-family: var(--FontFamily);
+  }
+  }
+  @media screen and (min-width:1920px) {
+      body{
+          margin:0;
+          background-image: url("./pattern-background-desktop.svg");
+          background-size:100vw; 
+          background-repeat: no-repeat;
+          background-position: 0 -10vh;
+          background-color: var(--PaleBlue);
+          font-family: var(--FontFamily);
+      }
+      }
